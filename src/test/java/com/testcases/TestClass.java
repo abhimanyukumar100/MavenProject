@@ -19,7 +19,7 @@ public class TestClass extends ObjectInitialization{
 	System.out.println("before test");  
 	}   
 	@Test
-	public void test() {
+	public void search() {
 		System.out.println(" test");
 		pgclass.search();
 	}

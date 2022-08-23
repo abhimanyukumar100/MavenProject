@@ -2,6 +2,7 @@ package com.utility;
 
 import org.openqa.selenium.WebDriver;
 
+import com.objectmap.Locators;
 import com.pages.PageClass;
 
 public class ObjectInitialization {

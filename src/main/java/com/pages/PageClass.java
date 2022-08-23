@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import com.objectmap.Locators;
+
 public class PageClass {
 	public WebDriver driver;
 	
@@ -12,9 +14,9 @@ public class PageClass {
 		
 	}
 	public void search() {
-		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).click();
-		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("selenium");
-		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath(Locators.SEARCH_INPUT)).click();
+		driver.findElement(By.xpath(Locators.SEARCH_INPUT)).sendKeys("selenium");
+		driver.findElement(By.xpath(Locators.SEARCH_INPUT)).sendKeys(Keys.ENTER);
 	}
 
 }
